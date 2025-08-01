@@ -3,8 +3,6 @@ This is a *regular* Markdown paragraph.
 - But it **can’t** make dropdowns, buttons, or styled boxes natively.
 
 
-
-<!DOCTYPE html>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Pacifico&display=swap');
   /* Apply fonts */
