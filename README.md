@@ -1,3 +1,7 @@
+This is a *regular* Markdown paragraph.  
+- It supports **bold**, *italics*, and [links](https://MyHomeschool.ca).  
+- But it **can’t** make dropdowns, buttons, or styled boxes natively.
+
 <details>
 <summary style="background: #f0f0f0; padding: 8px; cursor: pointer; border-radius: 4px;">
   🔽 <strong>Click me (HTML-only feature!)</strong>
