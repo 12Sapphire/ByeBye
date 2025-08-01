@@ -2,6 +2,9 @@ This is a *regular* Markdown paragraph.
 - It supports **bold**, *italics*, and [links](https://MyHomeschool.ca).  
 - But it **can’t** make dropdowns, buttons, or styled boxes natively.
 
+
+
+<!DOCTYPE html>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Pacifico&display=swap');
   /* Apply fonts */
