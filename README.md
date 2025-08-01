@@ -1,3 +1,1 @@
-<button onclick="window.location.href='https://Myhomeschool.ca'">
-  Go to Example
-</button>
+<p style="font-family: Arial;">This text is in Arial font!</p>
