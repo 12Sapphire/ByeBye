@@ -46,55 +46,44 @@
                 <li>Ordered list item 3</li>
             </ol>
             <blockquote>This is a blockquote. It's used to highlight quoted text.</blockquote>
-            
             <pre><code>// This is preformatted code
 function test() {
     console.log("Hello World!");
 }</code></pre>
         </section>
-
         <section id="media" class="box">
             <h2>Media Elements</h2>
-            <img src="https://via.placeholder.com/150" alt="Placeholder image" width="150" height="150">
-            
+            <img src="https://via.placeholder.com/150" alt="Placeholder image" width="150" height="150">          
             <figure>
                 <img src="https://via.placeholder.com/300x100" alt="Wide placeholder">
                 <figcaption>Figure with caption</figcaption>
-            </figure>
-            
+            </figure>        
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
-            </audio>
-            
+            </audio>            
             <video width="320" height="240" controls>
                 <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </section>
-
         <section id="forms" class="box">
             <h2>Form Elements</h2>
             <form action="/submit" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                
+                <input type="text" id="name" name="name" required><br><br>                
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                
+                <input type="email" id="email" name="email"><br><br>             
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                
+                <input type="password" id="password" name="password"><br><br>              
                 <label for="bio">Bio:</label>
-                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
-                
+                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>    
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
-                </select><br><br>
-                
+                </select><br><br>   
                 <fieldset>
                     <legend>Interests:</legend>
                     <input type="checkbox" id="sports" name="interest" value="sports">
@@ -104,21 +93,18 @@ function test() {
                     <input type="checkbox" id="books" name="interest" value="books">
                     <label for="books">Books</label><br>
                 </fieldset>
-                
                 <fieldset>
                     <legend>Subscribe:</legend>
                     <input type="radio" id="yes" name="subscribe" value="yes">
                     <label for="yes">Yes</label><br>
                     <input type="radio" id="no" name="subscribe" value="no">
                     <label for="no">No</label><br>
-                </fieldset>
-                
+                </fieldset>             
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
                 <button type="button">Just a Button</button>
             </form>
         </section>
-
         <section id="tables" class="box">
             <h2>Tables</h2>
             <table border="1">
@@ -155,7 +141,6 @@ function test() {
             </table>
         </section>
     </main>
-
     <footer class="box">
         <p>© 2023 HTML Test Page. All rights reserved.</p>
         <details>
