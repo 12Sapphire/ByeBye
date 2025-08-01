@@ -1,16 +1,20 @@
-# Markdown Heading  
+## HTML in Markdown Example  
 
-This is **Markdown** text.  
+<details>
+<summary>📌 Click to expand (HTML details tag)</summary>
 
-<!DOCTYPE html>
-<div style="color: red; border: 1px solid black; padding: 10px;">
-    This is an <strong>HTML div</strong> with custom styling.
-</div>  
+```html <marquee>This is old-school HTML!</marquee>
+```
 
-- Markdown list item  
-- Another item  
+</details>
 
-<button onclick="alert('Clicked!')">Click Me (HTML Button)</button>  
-
-More *Markdown* content...
-Hello 
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>25</td>
+    </tr>
+</table>
