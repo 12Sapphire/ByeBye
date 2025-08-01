@@ -11,3 +11,4 @@ This is a *regular* Markdown paragraph.
   <button onclick="alert('Markdown can’t do buttons!')">Try Me (HTML Button)</button>
 </div>
 </details>
+<button> This is a button </button>
