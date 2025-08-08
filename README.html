@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dropdown Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press H to Turn Blue</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #gameCanvas {
+            border: 2px solid #333;
+            background-color: white;
+        }
+        #instructions {
+            position: absolute;
+            top: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <select>
-    <option>Apple</option>
-    <option>Banana</option>
-    <option>Cherry</option>
-  </select>
+    <div id="instructions">
+        <h1>Press 'H' to turn the canvas blue!</h1>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <script>
+        // Get the canvas and context
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Initial canvas color
+        let canvasColor = 'white';
+        
+        // Function to draw the canvas with current color
+        function drawCanvas() {
+            ctx.fillStyle = canvasColor;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw some text
+            ctx.fillStyle = 'black';
+            ctx.font = '20px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(`Current color: ${canvasColor}`, canvas.width/2, canvas.height/2);
+        }
+        
+        // Initial draw
+        drawCanvas();
+        
+        // Event listener for key presses
+        document.addEventListener('keydown', function(event) {
+            // Check if the pressed key is 'H' or 'h'
+            if (event.key.toLowerCase() === 'h') {
+                // Change the canvas color to blue
+                canvasColor = 'blue';
+                // Redraw the canvas
+                drawCanvas();
+                
+                // Optional: Change back to white after 1 second
+                setTimeout(() => {
+                    canvasColor = 'white';
+                    drawCanvas();
+                }, 1000);
+            }
+        });
+    </script>
 </body>
 </html>
